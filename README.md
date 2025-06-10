@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![Desktop - 7](https://github.com/jieun419/jieun_portfolio/assets/109754988/0d619991-4690-4994-9c8e-95c120205720)
 
 - **`Project` :** 최지은 포트폴리오
@@ -78,3 +79,6 @@
 |- 끝 맺음 표시<br>- 소셜 링크 제공|
 
 
+=======
+# Portfolio
+>>>>>>> 303992cebe1cb3f35edd12cf627b1182037c0503
