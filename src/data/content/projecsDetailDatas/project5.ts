@@ -8,7 +8,7 @@ export const project5 = {
   data: '2023.07 - 2023.08',
   team: '6인 (프론트엔드 3명, 백엔드 3명)',
   tag: ['팀', '반응형', '사이드'],
-  depoloyurl: 'https://ubiquitous-meringue-86ef8a.netlify.app/',
+  depoloyurl: 'https://portfolio-9l21.vercel.app/',
   detailimginfo: [
     {
       imgurl: 'https://user-images.githubusercontent.com/77836614/255490884-6341a0f3-e248-4af3-9733-4846c1ae7c51.png',
