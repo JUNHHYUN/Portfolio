@@ -65,10 +65,10 @@ function Project({ id, navTabs }: TabsPropsT) {
                 title={item.title}
                 subject={item.subject}
                 tag={item.tag}
-                imgurl={item.imgurl}
+              
                 giturl={item.giturl}
                 depoloyurl={item.depoloyurl}
-                videourl={item.videourl}
+        
               />
             ))}
             {filterDataList.slice(0, 4).map((item, idx) => (

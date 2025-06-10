@@ -18,6 +18,18 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
       <h3 className="text-xl font-bold text-center mb-2 text-white">{member.name}</h3>
       <p className="text-white text-center mb-4">{member.role}</p>
       <p className="text-white mb-4">{member.description}</p>
+      {member.site && (
+        <div className="mb-4 text-center">
+          <a
+            href={member.site}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-4 py-2 bg-blue-600 rounded-full text-white font-semibold hover:bg-blue-700 transition"
+          >
+            개인 사이트 바로가기
+          </a>
+        </div>
+      )}
       <div className="space-y-2">
         {Object.entries(member.skills).map(([category, skills]) => (
           <div key={category}>

@@ -6,8 +6,12 @@ export interface TeamMember {
     FrontEnd?: string[];
     BackEnd?: string[];
     Tools?: string[];
+    DataBase?: string[];
+    LLM?: string[];
+    API?: string[];
   };
   image: string;
+  site?: string; // ← 이 줄을 추가하세요
 }
 
 export const teamData: TeamMember[] = [
@@ -24,17 +28,18 @@ export const teamData: TeamMember[] = [
     image: "src/assets/images/member1.png"
   },
   {
-  "name": "김대기",
-  "role": "풀스택 & LLM 서비스 개발자",
-  "description": "새로운 기술 도입에 적극적이며, 사용자 경험을 고려한 풀스택 개발을 지향합니다. 특히 LLM(거대 언어 모델) 서비스를 개발하며 프롬프트 엔지니어링과 모델 활용에 강점을 가지고 있습니다.",
-  "skills": {
-    "Backend": ["Python", "FastAPI"],
-    "Frontend": ["JavaScript", "React"],
-    "LLM/AI": ["LangChain", "Hugging Face", "LangGraph", "Prompt Engineering"],
-    "Database": ["MongoDB", "Pinecone"],
-    "DevOps": ["Docker"]
-  },
-    image: "src/assets/images/member2.webp"
+  name: "김대기",
+    role: "풀스택 & LLM 서비스 개발자",
+    description: "새로운 기술 도입에 적극적이며, 사용자 경험을 고려한 풀스택 개발을 지향합니다. 특히 LLM(거대 언어 모델) 서비스를 개발하며 프롬프트 엔지니어링과 모델 활용에 강점을 가지고 있습니다.",
+    skills: {
+      BackEnd: ["Python", "FastAPI"],
+      FrontEnd: ["JavaScript", "React"],
+      LLM: ["LangChain", "Hugging Face", "LangGraph", "Prompt Engineering"],
+      DataBase: ["MongoDB", "Pinecone"],
+      Tools: ["Docker"]
+    },
+    image: "src/assets/images/member2.webp",
+    site: "https://portfolio-9l21.vercel.app/"
   },
   {
   name: "최성민",

@@ -109,14 +109,18 @@ function ProjectCard({ title, subject, tag, imgurl, videourl, name, giturl, depo
       <HoverBox>
         <Tit>{title}</Tit>
         <BtnBox>
-          <Button onClick={() => openModal(name)}>자세히 보기</Button>
-          {giturl &&
-            <Button onClick={() => window.open(giturl)}>Github 바로가기</Button>
-          }
-          {depoloyurl &&
-            <Button onClick={() => window.open(depoloyurl)}>사이트 바로가기</Button>
-          }
-        </BtnBox>
+  {/* proje<BtnBox>
+  {/* project5만 자세히 보기 숨기기 */}
+  {name !== "HallaTour" && name !== "SITE4" &&(
+    <Button onClick={() => openModal(name)}>자세히 보기</Button>
+  )}
+  {giturl &&
+    <Button onClick={() => window.open(giturl)}>Github 바로가기</Button>
+  }
+  {depoloyurl &&
+    <Button onClick={() => window.open(depoloyurl)}>사이트 바로가기</Button>
+  }
+</BtnBox>
       </HoverBox>
 
       {(imgurl || videourl) && (
